@@ -16,7 +16,9 @@
   --deep-green: #1f5443;
   --sand: #efe6db;
   --brand-brown: #8b5e3c;
-  --menu-green: #2f5d50;
+  --menu-green: #1f5443;
+  --modal-panel-bg: #ffff;
+  --modal-overlay: rgba(0, 0, 0, 0.1);
 }
 
 .font-logo {
@@ -44,6 +46,12 @@
 }
 .btn-terracotta:hover {
   filter: brightness(0.95);
+}
+.modal-panel {
+  background: var(--modal-panel-bg) !important;
+}
+.modal-overlay {
+  background: var(--modal-overlay) !important;
 }
 
 html {
