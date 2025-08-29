@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+.font-head {
+  font-family: "Spectral", serif;
+}
+.font-body {
+  font-family: "Nunito", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+.font-hero {
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto,
+    sans-serif;
+}
+
+:root {
+  --terracotta: #d88c66;
+  --deep-green: #1f5443;
+  --sand: #efe6db;
+  --brand-brown: #8b5e3c;
+  --menu-green: #2f5d50;
+}
+
+.font-logo {
+  font-family: "Oooh Baby", cursive;
+}
+.font-menu {
+  font-family: "Nunito", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+.text-brand-brown {
+  color: var(--brand-brown);
+}
+.text-menu-green {
+  color: var(--menu-green);
+}
+.bg-sand {
+  background: var(--sand);
+}
+.bg-brand-brown {
+  background: var(--brand-brown);
+}
+
+.btn-terracotta {
+  background: var(--terracotta);
+  color: #fff;
+}
+.btn-terracotta:hover {
+  filter: brightness(0.95);
+}
+
+html {
+  scroll-behavior: smooth;
+}
