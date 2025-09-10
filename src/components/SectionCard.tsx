@@ -25,12 +25,12 @@ export default function SectionCard({
       <div className="absolute inset-0 bg-white/40"></div>
 
       <div className="absolute inset-0 p-5 md:p-8 flex flex-col justify-between">
-        <p className="max-w-[70%] font-body text-white text-sm md:text-base drop-shadow">
+        <p className="max-w-[80%] font-body text-white text-base md:text-lg drop-shadow">
           {text}
         </p>
         <button
           onClick={onCta}
-          className="btn-terracotta self-start rounded-lg px-4 py-2 text-sm font-body font-semibold"
+          className="btn-terracotta self-start rounded-lg px-5 py-2.5 text-base font-body font-semibold active:scale-95 transition"
         >
           {ctaLabel}
         </button>
