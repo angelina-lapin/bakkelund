@@ -4,14 +4,13 @@ import SectionCard from "../components/SectionCard";
 import Hero from "../components/Hero";
 import HytterModal from "../components/HytterModal";
 import OmOssPanel from "../components/OmOssPanel";
-
+import BadstuerModal from "../components/BadstuerModal";
 import heroImg from "../assets/hero.jpg";
 import hytterImg from "../assets/hytter.jpg";
 import badstueImg from "../assets/badstue.jpg";
 import arrImg from "../assets/arrangementer.jpg";
 import malekursImg from "../assets/malekurs.png";
 
-// добавь свои реальные изображения
 import g1 from "../assets/gal1.jpg";
 import g2 from "../assets/gal2.jpg";
 import g3 from "../assets/gal3.jpg";
@@ -21,6 +20,7 @@ import g6 from "../assets/gal6.jpg";
 
 export default function HomePage() {
   const [hytterOpen, setHytterOpen] = useState(false);
+  const [badstuerOpen, setBadstuerOpen] = useState(false);
   const [omOpen, setOmOpen] = useState(false);
   const omRef = useRef(null);
   const handleOmCta = () => {
@@ -64,7 +64,11 @@ export default function HomePage() {
         image={badstueImg}
         text="Det er mulig å booke badstue hos oss"
         ctaLabel="Finn ut mer"
-        onCta={() => alert("Модалка/страница для Badstuer")}
+        onCta={() => setBadstuerOpen(true)}
+      />
+      <BadstuerModal
+        open={badstuerOpen}
+        onClose={() => setBadstuerOpen(false)}
       />
 
       <SectionTitle>Arrangementer</SectionTitle>
